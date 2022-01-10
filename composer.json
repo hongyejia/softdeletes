@@ -1,0 +1,19 @@
+{
+    "name": "hongyejia/softdeletes",
+    "description": "larave softDeletes change",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hongyejia",
+            "email": "aqm@live.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hongyejia\\SoftDeletes\\": "./src/"
+        }
+    },
+    "require": {
+        "illuminate/database": "^8.78"
+    }
+}
