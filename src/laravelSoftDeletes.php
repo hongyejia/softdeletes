@@ -8,7 +8,7 @@ namespace Hongyejia\SoftDeletes;
  * @method static static|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder onlyTrashed()
  * @method static static|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder withoutTrashed()
  */
-trait laraveSoftDeletes
+trait laravelSoftDeletes
 {
 
     /**
