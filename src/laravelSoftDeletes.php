@@ -3,7 +3,6 @@ namespace Hongyejia\SoftDeletes;
 
 
 
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * @method static static|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder withTrashed()
@@ -12,8 +11,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 trait laravelSoftDeletes
 {
-    use SoftDeletes;
-
     /**
      * Indicates if the model is currently force deleting.
      *
@@ -26,7 +23,7 @@ trait laravelSoftDeletes
      *
      * @return void
      */
-    public static function bootSoftDeletes()
+    public static function bootlaravelSoftDeletes()
     {
         static::addGlobalScope(new SoftDeletingScope());
     }
