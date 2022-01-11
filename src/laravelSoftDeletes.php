@@ -3,6 +3,8 @@ namespace Hongyejia\SoftDeletes;
 
 
 
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 /**
  * @method static static|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder withTrashed()
  * @method static static|\Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder onlyTrashed()
@@ -10,6 +12,7 @@ namespace Hongyejia\SoftDeletes;
  */
 trait laravelSoftDeletes
 {
+    use SoftDeletes;
 
     /**
      * Indicates if the model is currently force deleting.
